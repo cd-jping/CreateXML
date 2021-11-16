@@ -14,10 +14,13 @@ path = os.sys.path[0]
 # 返回path下所有文件构成的一个list列表
 filelist=os.listdir(path)
 print(filelist)
+pngFile = []
 # 遍历输出每一个文件的名字和类型
 for item in filelist:
     # 输出指定后缀类型的文件
     if(item.endswith('.py')):
         # 不要扩展名
-        # item = os.path.splitext(item)[0]
+        item = os.path.splitext(item)[0]
+        pngFile.append(item)
         print(item)
+print(pngFile)
