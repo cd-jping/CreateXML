@@ -1,11 +1,17 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
 import xml.dom.minidom
 import os
+import sys
+
+# 创建一个空数组用来存匹配的文件名
+png_list = []
 
 
 def read_files():
     # 获取当前目录
-    path = os.sys.path[0]
-    # 返回path下所有文件构成的一个list列表
+
+    path = sys.path[0]
     file_list = os.listdir(path)
 
     # 遍历输出每一个文件的名字和类型
@@ -36,7 +42,7 @@ def create_drawable(file_list):
         item.setAttribute('drawable', str(i))
         resources.appendChild(item)
 
-    fp = open('testdrawable.xml', 'w', encoding='utf-8')
+    fp = open('testdrawable.xml', 'w' )
     xml_drawable.writexml(fp, indent='\t', addindent='\t', newl='\n', encoding='utf-8')
 
 
@@ -53,12 +59,10 @@ def create_icon_pack(file_list):
         item.appendChild(xml_iconpack.createTextNode(str(i)))
         resources.appendChild(item)
 
-    fp = open('testiconpack.xml', 'w', encoding='utf-8')
+    fp = open('testiconpack.xml', 'w')
     xml_iconpack.writexml(fp, indent='\t', addindent='\t', newl='\n', encoding='utf-8')
 
 
-# 创建一个空数组用来存匹配的文件名
-png_list = []
 # 读取文件列表
 read_files()
 # 生成drawable.xml
