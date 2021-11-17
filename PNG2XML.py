@@ -12,7 +12,7 @@ png_list = []
 def read_files():
     # 获取当前目录
 
-    path = sys.path[0]
+    path = os.getcwd()
     file_list = os.listdir(path)
 
     # 遍历输出每一个文件的名字和类型
