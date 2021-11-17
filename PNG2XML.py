@@ -1,5 +1,6 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
+
 import xml.dom.minidom
 import os
 import sys
@@ -17,7 +18,7 @@ def read_files():
     # 遍历输出每一个文件的名字和类型
     for file_name in file_list:
         # 输出指定后缀类型的文件
-        if file_name.endswith('.jpg'):
+        if file_name.endswith('.png'):
             # 不要扩展名
             f_name = os.path.splitext(file_name)[0]
             png_list.append(f_name)
@@ -42,8 +43,8 @@ def create_drawable(file_list):
         item.setAttribute('drawable', str(i))
         resources.appendChild(item)
 
-    fp = open('testdrawable.xml', 'w' )
-    xml_drawable.writexml(fp, indent='\t', addindent='\t', newl='\n', encoding='utf-8')
+    fp = open('testdrawable.xml', 'w',encoding='utf-8')
+    xml_drawable.writexml(fp, indent='\t', addindent='\t', newl='\n')
 
 
 def create_icon_pack(file_list):
@@ -59,8 +60,8 @@ def create_icon_pack(file_list):
         item.appendChild(xml_iconpack.createTextNode(str(i)))
         resources.appendChild(item)
 
-    fp = open('testiconpack.xml', 'w')
-    xml_iconpack.writexml(fp, indent='\t', addindent='\t', newl='\n', encoding='utf-8')
+    fp = open('testiconpack.xml', 'w', encoding='utf-8')
+    xml_iconpack.writexml(fp, indent='\t', addindent='\t', newl='\n')
 
 
 # 读取文件列表

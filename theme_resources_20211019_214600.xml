@@ -1,0 +1,60 @@
+<Theme version="1">
+	<Label value="Pixelworld"/>
+	<Wallpaper image="wallpaper_01"/>
+	<LockScreenWallpaper image="wallpaper_02"/>
+	<ThemePreview image="preview1"/>
+	<ThemePreviewWork image="preview1"/>
+	<ThemePreviewMenu image="preview1"/>
+	<DockMenuAppIcon selector="drawer"/>
+
+	<!-- Alarmy -->
+	<AppIcon
+		name="droom.sleepIfUCan/droom.sleepIfUCan.activity.MainActivity"
+		image="alarmy"/>
+
+	<!-- Addons -->
+	<AppIcon
+		name="com.kayenworks.mcpeaddons/com.kayenworks.mcpeaddons.SplashActivity"
+		image="b612咔叽"/>
+
+	<!-- Pixel Studio -->
+	<AppIcon
+		name="com.PixelStudio/com.unity3d.player.UnityPlayerActivity"
+		image="a_7723游戏盒"/>
+
+	<!-- 云 原神 -->
+	<AppIcon
+		name="com.miHoYo.cloudgames.ys/com.mihoyo.cloudgame.ui.SplashActivity"
+		image="云_原神"/>
+
+	<!-- 英雄联盟手游 -->
+	<AppIcon
+		name="com.tencent.lolm/com.tencent.lolm.lgame"
+		image="英雄联盟手游"/>
+
+	<!-- Themes Manager -->
+	<AppIcon
+		name="com.deishelon.lab.huaweithememanager/com.deishelon.lab.huaweithememanager.ui.activities.ThemesActivity"
+		image="a_58同城"/>
+
+	<!-- 谷歌服务助手 -->
+	<AppIcon
+		name="com.lzplay.helper/com.lzplay.helper.SplashActivity"
+		image="谷歌服务助手"/>
+
+	<!-- 老子追剧 -->
+	<AppIcon
+		name="com.walixiwa.easyplayer/com.walixiwa.easyplayer.ui.activity.otherActivitys.SplashActivity"
+		image="老子追剧"/>
+
+	<!-- Ultimate VPN -->
+	<AppIcon
+		name="com.open.hotspot.vpn.free/com.open.hotspot.vpn.free.ui.activity.LauncherActivity"
+		image="a_360极速浏览器"/>
+
+	<!-- Opera -->
+	<AppIcon
+		name="com.opera.browser/com.opera.Opera"
+		image="a_360儿童卫士"/>
+
+</Theme>
