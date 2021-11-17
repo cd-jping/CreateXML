@@ -1,69 +1,41 @@
 <appmap>
 
-	<!-- Alarmy -->
-	<item
-		class="droom.sleepIfUCan.activity.MainActivity"
-		name="alarmy"/>
+	
+	<item class="droom.sleepIfUCan.activity.MainActivity" name="alarmy" />
 
-	<!-- Addons -->
-	<item
-		class="com.kayenworks.mcpeaddons.SplashActivity"
-		name="addons"/>
+	
+	<item class="com.kayenworks.mcpeaddons.SplashActivity" name="addons" />
 
-	<!-- Pixel Studio -->
-	<item
-		class="com.unity3d.player.UnityPlayerActivity"
-		name="pixel_studio"/>
+	
+	<item class="com.unity3d.player.UnityPlayerActivity" name="pixel_studio" />
 
-	<!-- 云 原神 -->
-	<item
-		class="com.mihoyo.cloudgame.ui.SplashActivity"
-		name="云_原神"/>
+	
+	<item class="com.mihoyo.cloudgame.ui.SplashActivity" name="yun_yuanshen" />
 
-	<!-- 英雄联盟手游 -->
-	<item
-		class="com.tencent.lolm.lgame"
-		name="英雄联盟手游"/>
+	
+	<item class="com.tencent.lolm.lgame" name="yingxionglianmengshouyou" />
 
-	<!-- Themes Manager -->
-	<item
-		class="com.deishelon.lab.huaweithememanager.ui.activities.ThemesActivity"
-		name="themes_manager"/>
+	
+	<item class="com.deishelon.lab.huaweithememanager.ui.activities.ThemesActivity" name="themes_manager" />
 
-	<!-- 谷歌服务助手 -->
-	<item
-		class="com.lzplay.helper.SplashActivity"
-		name="谷歌服务助手"/>
+	
+	<item class="com.lzplay.helper.SplashActivity" name="gugefuwuzhushou" />
 
-	<!-- 老子追剧 -->
-	<item
-		class="com.walixiwa.easyplayer.ui.activity.otherActivitys.SplashActivity"
-		name="老子追剧"/>
+	
+	<item class="com.walixiwa.easyplayer.ui.activity.otherActivitys.SplashActivity" name="laozizhuiju" />
 
-	<!-- Ultimate VPN -->
-	<item
-		class="com.open.hotspot.vpn.free.ui.activity.LauncherActivity"
-		name="搜图神器"/>
-	<!-- Ultimate VPN -->
-	<item
-		class="com.open.hotspot.vpn.free.ui.activity.LauncherActivity"
-		name="蔚蓝_不凡"/>
-	<!-- Ultimate VPN -->
-	<item
-		class="com.open.hotspot.vpn.free.ui.activity.LauncherActivity"
-		name="b612咔叽"/>
-	<!-- Ultimate VPN -->
-	<item
-		class="com.open.hotspot.vpn.free.ui.activity.LauncherActivity"
-		name="a_7723游戏盒"/>
-	<!-- Ultimate VPN -->
-	<item
-		class="com.open.hotspot.vpn.free.ui.activity.LauncherActivity"
-		name="a_360儿童卫士"/>
+	
+	<item class="com.open.hotspot.vpn.free.ui.activity.LauncherActivity" name="soutushenqi" />
+	
+	<item class="com.open.hotspot.vpn.free.ui.activity.LauncherActivity" name="weilan_bufan" />
+	
+	<item class="com.open.hotspot.vpn.free.ui.activity.LauncherActivity" name="b612kaji" />
+	
+	<item class="com.open.hotspot.vpn.free.ui.activity.LauncherActivity" name="a_7723youxihe" />
+	
+	<item class="com.open.hotspot.vpn.free.ui.activity.LauncherActivity" name="a_360ertongweishi" />
 
-	<!-- Opera -->
-	<item
-		class="com.opera.Opera"
-		name="邻里wifi密码"/>
+	
+	<item class="com.opera.Opera" name="linliwifimima" />
 
 </appmap>

@@ -33,8 +33,9 @@ from xpinyin import Pinyin
 def read_files():
     # 获取当前目录
     #
-    path = sys.path[0]
+    path = os.getcwd()
     file_list = os.listdir(path)
+
     # 遍历输出每一个文件的名字和类型
     for file_name in file_list:
         # 输出指定后缀类型的文件
@@ -88,14 +89,15 @@ def re_xml(string):
     app_filter_tree.write(app_filter)
 
     app_map = string.get("appmap")
-    add_map_tree = XE.parse(app_map)
-    app_map_root = add_map_tree.getroot()
+    app_map_tree = XE.parse(app_map)
+    app_map_root = app_map_tree.getroot()
     for item in app_map_root.findall("item"):
         v = item.get("name")
         if bool(is_chinese(v)):
             p = Pinyin()
             py = p.get_pinyin(v, '')
             item.set("name", py)
+    app_map_tree.write(app_map)
 
     theme_res = string.get("theme_res")
     theme_res_tree = XE.parse(theme_res)
@@ -106,8 +108,7 @@ def re_xml(string):
             p = Pinyin()
             py = p.get_pinyin(v, '')
             item.set("image", py)
-
-
+    theme_res_tree.write(theme_res)
 
 
 # 判断是否包含中文
@@ -119,12 +120,24 @@ def is_chinese(string):
     return False
 
 
+def output_txt(dict_temp):
+    file = open('dict.txt', 'w', encoding='utf-8')
+    # 遍历字典的元素，将每项元素的key和value分拆组成字符串，注意添加分隔符和换行符
+    for k, v in dict_temp.items():
+        file.write(str(k) + ' ' + str(v) + '\n')
+    file.close()
+
+
 # 创建空字典用来存储文件名
 chinese_list = {}
 # 获取xml的文件名
 xml_list = {}
+
+# 读取目录
 read_files()
-print(xml_list)
+# 重命名xml
 re_xml(xml_list)
+# 输出 txt
+output_txt(chinese_list)
 
 
