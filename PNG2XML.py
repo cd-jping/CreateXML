@@ -3,7 +3,7 @@
 
 import xml.dom.minidom
 import os
-import sys
+
 
 # 创建一个空数组用来存匹配的文件名
 png_list = []
@@ -11,7 +11,6 @@ png_list = []
 
 def read_files():
     # 获取当前目录
-
     path = os.getcwd()
     file_list = os.listdir(path)
 
@@ -36,7 +35,6 @@ def create_drawable(file_list):
     # fileList = [{'name':'wechat'},
     #             {'name':'qq'},
     #             {'name':'weibo'},
-    #             {'name':'bilibili'},
     #             {'name':'alipay'}]
     for i in files:
         item = xml_drawable.createElement('item')
@@ -50,18 +48,18 @@ def create_drawable(file_list):
 def create_icon_pack(file_list):
     files = file_list
     # 创建文档在内存中
-    xml_iconpack = xml.dom.minidom.Document()
+    xml_icon_pack = xml.dom.minidom.Document()
     # 创建元素
-    resources = xml_iconpack.createElement('resources')
+    resources = xml_icon_pack.createElement('resources')
     # 将元素添加的文档中
-    xml_iconpack.appendChild(resources)
+    xml_icon_pack.appendChild(resources)
     for i in files:
-        item = xml_iconpack.createElement('item')
-        item.appendChild(xml_iconpack.createTextNode(str(i)))
+        item = xml_icon_pack.createElement('item')
+        item.appendChild(xml_icon_pack.createTextNode(str(i)))
         resources.appendChild(item)
 
     fp = open('testiconpack.xml', 'w', encoding='utf-8')
-    xml_iconpack.writexml(fp, indent='\t', addindent='\t', newl='\n')
+    xml_icon_pack.writexml(fp, indent='\t', addindent='\t', newl='\n')
 
 
 # 读取文件列表
