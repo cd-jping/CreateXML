@@ -1,9 +1,7 @@
 
 import os
-
 import xml.etree.ElementTree as XE
-
-from xpinyin import Pinyin
+import xpinyin
 
 
 def read_files():
@@ -29,7 +27,7 @@ def read_files():
             # is_chinese(f_name)
             if bool(is_chinese(f_name)):
                 # print('true')
-                p = Pinyin()
+                p = xpinyin.Pinyin()
                 py = p.get_pinyin(f_name, '')
                 chinese_list.update({f_name: py})
     # print(file_list)
@@ -59,7 +57,7 @@ def re_xml(string):
     for item in app_filter_root.findall("item"):
         v = item.get("drawable")
         if bool(is_chinese(v)):
-            p = Pinyin()
+            p = xpinyin.Pinyin()
             py = p.get_pinyin(v, '')
             item.set("drawable", py)
     app_filter_tree.write(app_filter)
@@ -70,7 +68,7 @@ def re_xml(string):
     for item in app_map_root.findall("item"):
         v = item.get("name")
         if bool(is_chinese(v)):
-            p = Pinyin()
+            p = xpinyin.Pinyin()
             py = p.get_pinyin(v, '')
             item.set("name", py)
     app_map_tree.write(app_map)
@@ -81,7 +79,7 @@ def re_xml(string):
     for item in theme_res_root.findall("AppIcon"):
         v = item.get("image")
         if bool(is_chinese(v)):
-            p = Pinyin()
+            p = xpinyin.Pinyin()
             py = p.get_pinyin(v, '')
             item.set("image", py)
     theme_res_tree.write(theme_res)
@@ -103,6 +101,9 @@ def output_txt(dict_temp):
         file.write(str(k) + ' ' + str(v) + '\n')
     file.close()
 
+
+# 修改打包不能用的问题
+# 如果当前包里面没有 已经打包的 那么查找当前路径
 
 # 创建空字典用来存储文件名
 chinese_list = {}
