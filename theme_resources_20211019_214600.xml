@@ -1,3 +1,4 @@
+<?xml version='1.0' encoding='utf-8'?>
 <Theme version="1">
 	<Label value="Pixelworld" />
 	<Wallpaper image="wallpaper_01" />
@@ -17,19 +18,19 @@
 	<AppIcon name="com.PixelStudio/com.unity3d.player.UnityPlayerActivity" image="a_7723youxihe" />
 
 	
-	<AppIcon name="com.miHoYo.cloudgames.ys/com.mihoyo.cloudgame.ui.SplashActivity" image="yun_yuanshen" />
+	<AppIcon name="com.miHoYo.cloudgames.ys/com.mihoyo.cloudgame.ui.SplashActivity" image="asidunsadansadan" />
 
 	
-	<AppIcon name="com.tencent.lolm/com.tencent.lolm.lgame" image="yingxionglianmengshouyou" />
+	<AppIcon name="com.tencent.lolm/com.tencent.lolm.lgame" image="asandaosaasidun" />
 
 	
 	<AppIcon name="com.deishelon.lab.huaweithememanager/com.deishelon.lab.huaweithememanager.ui.activities.ThemesActivity" image="a_58tongcheng" />
 
 	
-	<AppIcon name="com.lzplay.helper/com.lzplay.helper.SplashActivity" image="gugefuwuzhushou" />
+	<AppIcon name="com.lzplay.helper/com.lzplay.helper.SplashActivity" image="ashidashide" />
 
 	
-	<AppIcon name="com.walixiwa.easyplayer/com.walixiwa.easyplayer.ui.activity.otherActivitys.SplashActivity" image="laozizhuiju" />
+	<AppIcon name="com.walixiwa.easyplayer/com.walixiwa.easyplayer.ui.activity.otherActivitys.SplashActivity" image="asidunsadan" />
 
 	
 	<AppIcon name="com.open.hotspot.vpn.free/com.open.hotspot.vpn.free.ui.activity.LauncherActivity" image="a_360jisuliulanqi" />

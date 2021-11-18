@@ -1,3 +1,4 @@
+<?xml version='1.0' encoding='utf-8'?>
 <resources>
 	<iconback img1="iconback" />
 	<iconmask img1="iconmask" />
@@ -5,31 +6,33 @@
 	<scale factor="1.0" />
 
 	
-	<item component="ComponentInfo{droom.sleepIfUCan/droom.sleepIfUCan.activity.MainActivity}" drawable="a_360ertongweishi" />
+	<item component="ComponentInfo{com.netease.sky/com.netease.ntunisdk.external.protocol.ProtocolLauncher}" drawable="asidun" />
 
 	
-	<item component="ComponentInfo{com.kayenworks.mcpeaddons/com.kayenworks.mcpeaddons.SplashActivity}" drawable="a_360jisuliulanqi" />
+	<item component="ComponentInfo{com.ss.squarehome2/com.ss.squarehome2.MainActivity}" drawable="asidunsa" />
 
 	
-	<item component="ComponentInfo{com.PixelStudio/com.unity3d.player.UnityPlayerActivity}" drawable="a_58tongcheng" />
+	<item component="ComponentInfo{com.catchingnow.icebox/com.catchingnow.icebox.activity.mainActivity.MainAppActivity}" drawable="ice_box" />
+
+
 
 	
-	<item component="ComponentInfo{com.miHoYo.cloudgames.ys/com.mihoyo.cloudgame.ui.SplashActivity}" drawable="yun_yuanshen" />
+	<item component="ComponentInfo{com.miHoYo.cloudgames.ys/com.mihoyo.cloudgame.ui.SplashActivity}" drawable="dashaosijidu" />
 
 	
-	<item component="ComponentInfo{com.tencent.lolm/com.tencent.lolm.lgame}" drawable="yingxionglianmengshouyou" />
+	<item component="ComponentInfo{com.tencent.lolm/com.tencent.lolm.lgame}" drawable="asidunsa" />
 
 	
 	<item component="ComponentInfo{com.deishelon.lab.huaweithememanager/com.deishelon.lab.huaweithememanager.ui.activities.ThemesActivity}" drawable="a_7723youxihe" />
 
 	
-	<item component="ComponentInfo{com.lzplay.helper/com.lzplay.helper.SplashActivity}" drawable="gugefuwuzhushou" />
+	<item component="ComponentInfo{com.lzplay.helper/com.lzplay.helper.SplashActivity}" drawable="asandasudasadan" />
 
 	
-	<item component="ComponentInfo{com.walixiwa.easyplayer/com.walixiwa.easyplayer.ui.activity.otherActivitys.SplashActivity}" drawable="laozizhuiju" />
+	<item component="ComponentInfo{com.walixiwa.easyplayer/com.walixiwa.easyplayer.ui.activity.otherActivitys.SplashActivity}" drawable="asongdade" />
 
 	
-	<item component="ComponentInfo{com.open.hotspot.vpn.free/com.open.hotspot.vpn.free.ui.activity.LauncherActivity}" drawable="b612kaji" />
+	<item component="ComponentInfo{com.open.hotspot.vpn.free/com.open.hotspot.vpn.free.ui.activity.LauncherActivity}" drawable="ashidasasa" />
 
 	
 	<item component="ComponentInfo{com.opera.browser/com.opera.Opera}" drawable="soutushenqi" />

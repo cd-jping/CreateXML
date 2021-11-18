@@ -1,41 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
 <appmap>
 
-	
-	<item class="droom.sleepIfUCan.activity.MainActivity" name="alarmy" />
-
-	
-	<item class="com.kayenworks.mcpeaddons.SplashActivity" name="addons" />
-
-	
-	<item class="com.unity3d.player.UnityPlayerActivity" name="pixel_studio" />
-
-	
-	<item class="com.mihoyo.cloudgame.ui.SplashActivity" name="yun_yuanshen" />
-
-	
-	<item class="com.tencent.lolm.lgame" name="yingxionglianmengshouyou" />
-
-	
-	<item class="com.deishelon.lab.huaweithememanager.ui.activities.ThemesActivity" name="themes_manager" />
-
-	
-	<item class="com.lzplay.helper.SplashActivity" name="gugefuwuzhushou" />
-
-	
-	<item class="com.walixiwa.easyplayer.ui.activity.otherActivitys.SplashActivity" name="laozizhuiju" />
-
-	
-	<item class="com.open.hotspot.vpn.free.ui.activity.LauncherActivity" name="soutushenqi" />
-	
-	<item class="com.open.hotspot.vpn.free.ui.activity.LauncherActivity" name="weilan_bufan" />
-	
-	<item class="com.open.hotspot.vpn.free.ui.activity.LauncherActivity" name="b612kaji" />
-	
-	<item class="com.open.hotspot.vpn.free.ui.activity.LauncherActivity" name="a_7723youxihe" />
-	
-	<item class="com.open.hotspot.vpn.free.ui.activity.LauncherActivity" name="a_360ertongweishi" />
-
-	
-	<item class="com.opera.Opera" name="linliwifimima" />
+    
+    <item class="com.android.contacts.DialtactsContactsEntryActivity" name="dasudasadan" />
+    <item class="com.android.contacts.DialtactsContactsEntryActivity" name="dasudasadan" />
+    <item class="com.android.contacts.DialtactsContactsEntryActivity" name="dasudasadan" />
+    <item class="com.android.contacts.DialtactsContactsEntryActivity" name="dasudasadan" />
+    <item class="com.android.contacts.DialtactsContactsEntryActivity" name="dasudasadan" />
 
 </appmap>
