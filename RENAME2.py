@@ -57,46 +57,56 @@ def re_file(string):
 def re_xml(string):
     # 从保存的字典中读取所需要的xml树
     app_filter = string.get("appfilter")
-    app_filter_tree = xmlTree.parse(app_filter)
-    app_filter_root = app_filter_tree.getroot()
-    count = 0
-    # 遍历所需要替换的元素属性值
-    for item in app_filter_root.findall("item"):
-        v = item.get("drawable")
-        if bool(is_chinese(v)):
-            # 这里改了思路 直接转换了 不需要依照字典的记录替换
-            py = get_pinyin(v)
-            item.set("drawable", py)
-            count = count + 1
-    print(str(count) + " changes from appfilter ")
-    app_filter_tree.write(app_filter, encoding="utf-8", xml_declaration=True)
+    # 小bug修复 当没有修改或替换对象时 Pass
+    if app_filter is None:
+        pass
+    else:
+        app_filter_tree = xmlTree.parse(app_filter)
+        app_filter_root = app_filter_tree.getroot()
+        count = 0
+        # 遍历所需要替换的元素属性值
+        for item in app_filter_root.findall("item"):
+            v = item.get("drawable")
+            if bool(is_chinese(v)):
+                # 这里改了思路 直接转换了 不需要依照字典的记录替换
+                py = get_pinyin(v)
+                item.set("drawable", py)
+                count = count + 1
+        print(str(count) + " changes from appfilter ")
+        app_filter_tree.write(app_filter, encoding="utf-8", xml_declaration=True)
 
     app_map = string.get("appmap")
-    app_map_tree = xmlTree.parse(app_map)
-    app_map_root = app_map_tree.getroot()
-    count = 0
-    for item in app_map_root.findall("item"):
-        v = item.get("name")
-        if bool(is_chinese(v)):
-            py = get_pinyin(v)
-            item.set("name", py)
-            count = + 1
-    print(str(count) + " changes from appmap ")
-    app_map_tree.write(app_map, encoding="utf-8", xml_declaration=True)
+    if app_map is None:
+        pass
+    else:
+        app_map_tree = xmlTree.parse(app_map)
+        app_map_root = app_map_tree.getroot()
+        count = 0
+        for item in app_map_root.findall("item"):
+            v = item.get("name")
+            if bool(is_chinese(v)):
+                py = get_pinyin(v)
+                item.set("name", py)
+                count = + 1
+        print(str(count) + " changes from appmap ")
+        app_map_tree.write(app_map, encoding="utf-8", xml_declaration=True)
 
     theme_res = string.get("theme_res")
-    theme_res_tree = xmlTree.parse(theme_res)
-    theme_res_root = theme_res_tree.getroot()
-    count = 0
-    for item in theme_res_root.findall("AppIcon"):
-        v = item.get("image")
-        if bool(is_chinese(v)):
-            py = get_pinyin(v)
-            item.set("image", py)
-            count = count + 1
-    print(str(count) + " changes from theme_res ")
-    theme_res_tree.write(theme_res, encoding="utf-8", xml_declaration=True)
-    # print("XML file has been Changed!")
+    if theme_res is None:
+        pass
+    else:
+        theme_res_tree = xmlTree.parse(theme_res)
+        theme_res_root = theme_res_tree.getroot()
+        count = 0
+        for item in theme_res_root.findall("AppIcon"):
+            v = item.get("image")
+            if bool(is_chinese(v)):
+                py = get_pinyin(v)
+                item.set("image", py)
+                count = count + 1
+        print(str(count) + " changes from theme_res ")
+        theme_res_tree.write(theme_res, encoding="utf-8", xml_declaration=True)
+        # print("XML file has been Changed!")
 
 
 # 判断是否包含中文
@@ -110,12 +120,14 @@ def is_chinese(string):
 
 # 把文件名记录输出到txt 以供检查对照
 def output_txt(dict_temp):
-    file = open('Changed.txt', 'w', encoding='utf-8')
-    # 遍历字典的元素，将每项元素的key和value分拆组成字符串，注意添加分隔符和换行符
-    for k, v in dict_temp.items():
-        file.write(str(k) + ' ' + str(v) + '\n')
-    file.close()
-    print("TXT File Exported")
+    if chinese_list is None:
+        # print(chinese_list)
+        file = open('Changed.txt', 'w', encoding='utf-8')
+        # 遍历字典的元素，将每项元素的key和value分拆组成字符串，注意添加分隔符和换行符
+        for k, v in dict_temp.items():
+            file.write(str(k) + ' ' + str(v) + '\n')
+        file.close()
+        print("TXT File Exported")
 
 
 # 创建空字典用来存储文件名
@@ -125,7 +137,12 @@ xml_list = {}
 
 # 读取目录
 read_files()
-# 重命名xml
-re_xml(xml_list)
-# 输出 txt
-output_txt(chinese_list)
+if len(chinese_list) != 0:
+    # 重命名xml
+    re_xml(xml_list)
+    # 输出 txt
+    output_txt(chinese_list)
+else:
+    print("No File Changed")
+
+input("Press Enter Key EXIT")

@@ -16,6 +16,7 @@ def read_files():
             # 不要扩展名
             f_name = os.path.splitext(file_name)[0]
             png_list.append(f_name)
+
     print(str(len(png_list)) + " files")
 
 
@@ -62,7 +63,12 @@ png_list = []
 
 # 读取文件列表
 read_files()
-# 生成drawable.xml
-create_drawable(png_list)
-# 生成icon_pack.xml
-create_icon_pack(png_list)
+if len(png_list) != 0:
+    # 生成drawable.xml
+    create_drawable(png_list)
+    # 生成icon_pack.xml
+    create_icon_pack(png_list)
+else:
+    print("No file to be Changed")
+
+input("Press Enter Key EXIT")
