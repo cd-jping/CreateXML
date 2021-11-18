@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Theme version="1">
+	<Label value="Pixelworld" />
+	<Wallpaper image="wallpaper_01" />
+	<LockScreenWallpaper image="wallpaper_02" />
+	<ThemePreview image="preview1" />
+	<ThemePreviewWork image="preview1" />
+	<ThemePreviewMenu image="preview1" />
+	<DockMenuAppIcon selector="drawer" />
+
+	
+	<AppIcon name="com.apowersoft.backgrounderaser/com.backgrounderaser.main.page.splash.SplashActivity" image="bg_remover" />
+
+	
+	<AppIcon name="net.csdn.csdnplus/net.csdn.csdnplus.activity.MainActivity" image="csdn" />
+
+	
+	<AppIcon name="com.adnonstop.mancamera2017/com.adnonstop.mancamera2017.CamHomme" image="cam_homme" />
+
+	
+	<AppIcon name="com.jacey.camera.detector/com.jacey.camera.detector.SplashActivity" image="camera_detector" />
+
+	
+	<AppIcon name="cc.forestapp/cc.forestapp.applications.SplashActivity" image="forest" />
+
+	
+	<AppIcon name="com.sankuai.meituan/com.meituan.android.pt.homepage.activity.MainActivity" image="meituan" />
+
+	
+	<AppIcon name="de.rwth_aachen.phyphox/de.rwth_aachen.phyphox.ExperimentList" image="phyphox" />
+
+	
+	<AppIcon name="com.pixlr.express/com.pixlr.express.StartupActivity" image="pixlr" />
+
+	
+	<AppIcon name="org.coolcode.stopwatch/org.coolcode.stopwatch.Main" image="stopwatch" />
+
+	
+	<AppIcon name="com.lemon.yoka/com.lemon.yoka.login.LoadingPageActivity" image="uokayouka" />
+
+</Theme>

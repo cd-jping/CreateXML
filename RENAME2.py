@@ -120,14 +120,13 @@ def is_chinese(string):
 
 # 把文件名记录输出到txt 以供检查对照
 def output_txt(dict_temp):
-    if chinese_list is None:
-        # print(chinese_list)
-        file = open('Changed.txt', 'w', encoding='utf-8')
-        # 遍历字典的元素，将每项元素的key和value分拆组成字符串，注意添加分隔符和换行符
-        for k, v in dict_temp.items():
-            file.write(str(k) + ' ' + str(v) + '\n')
-        file.close()
-        print("TXT File Exported")
+    # print(chinese_list)
+    file = open('./Changed.txt', 'w', encoding='utf-8')
+    # 遍历字典的元素，将每项元素的key和value分拆组成字符串，注意添加分隔符和换行符
+    for k, v in dict_temp.items():
+        file.write(str(k) + '   ' + str(v) + '\n')
+    file.close()
+    print("TXT File Exported")
 
 
 # 创建空字典用来存储文件名

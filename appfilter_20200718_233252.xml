@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+	<iconback img1="iconback" />
+	<iconmask img1="iconmask" />
+	<iconupon img1="iconupon" />
+	<scale factor="1.0" />
+
+	
+	<item component="ComponentInfo{com.apowersoft.backgrounderaser/com.backgrounderaser.main.page.splash.SplashActivity}" drawable="bg_remover" />
+
+	
+	<item component="ComponentInfo{net.csdn.csdnplus/net.csdn.csdnplus.activity.MainActivity}" drawable="csdn" />
+
+	
+	<item component="ComponentInfo{com.adnonstop.mancamera2017/com.adnonstop.mancamera2017.CamHomme}" drawable="cam_homme" />
+
+	
+	<item component="ComponentInfo{com.jacey.camera.detector/com.jacey.camera.detector.SplashActivity}" drawable="camera_detector" />
+
+	
+	<item component="ComponentInfo{cc.forestapp/cc.forestapp.applications.SplashActivity}" drawable="forest" />
+
+	
+	<item component="ComponentInfo{com.sankuai.meituan/com.meituan.android.pt.homepage.activity.MainActivity}" drawable="meituan" />
+
+	
+	<item component="ComponentInfo{de.rwth_aachen.phyphox/de.rwth_aachen.phyphox.ExperimentList}" drawable="phyphox" />
+
+	
+	<item component="ComponentInfo{com.pixlr.express/com.pixlr.express.StartupActivity}" drawable="pixlr" />
+
+	
+	<item component="ComponentInfo{org.coolcode.stopwatch/org.coolcode.stopwatch.Main}" drawable="stopwatch" />
+
+	
+	<item component="ComponentInfo{com.lemon.yoka/com.lemon.yoka.login.LoadingPageActivity}" drawable="uokayouka" />
+
+</resources>
