@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 import os
 import xml.etree.ElementTree as xmlTree
+import lxml.etree as ET
 import pypinyin
 
 
@@ -61,9 +62,10 @@ def re_xml(string):
     if app_filter is None:
         pass
     else:
-        app_filter_tree = xmlTree.parse(app_filter)
+        app_filter_tree = ET.parse(app_filter)
         app_filter_root = app_filter_tree.getroot()
         count = 0
+        # print(app_filter_root)
         # 遍历所需要替换的元素属性值
         for item in app_filter_root.findall("item"):
             v = item.get("drawable")
@@ -72,6 +74,7 @@ def re_xml(string):
                 py = get_pinyin(v)
                 item.set("drawable", py)
                 count = count + 1
+                # print(item)
         print(str(count) + " changes from appfilter ")
         app_filter_tree.write(app_filter, encoding="utf-8", xml_declaration=True)
 
@@ -79,7 +82,7 @@ def re_xml(string):
     if app_map is None:
         pass
     else:
-        app_map_tree = xmlTree.parse(app_map)
+        app_map_tree = ET.parse(app_map)
         app_map_root = app_map_tree.getroot()
         count = 0
         for item in app_map_root.findall("item"):
@@ -95,7 +98,7 @@ def re_xml(string):
     if theme_res is None:
         pass
     else:
-        theme_res_tree = xmlTree.parse(theme_res)
+        theme_res_tree = ET.parse(theme_res)
         theme_res_root = theme_res_tree.getroot()
         count = 0
         for item in theme_res_root.findall("AppIcon"):

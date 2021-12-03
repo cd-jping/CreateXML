@@ -1,38 +1,119 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version='1.0' encoding='UTF-8'?>
 <resources>
-	<iconback img1="iconback" />
-	<iconmask img1="iconmask" />
-	<iconupon img1="iconupon" />
-	<scale factor="1.0" />
+	<iconback img1="iconback"/>
+	<iconmask img1="iconmask"/>
+	<iconupon img1="iconupon"/>
+	<scale factor="1.0"/>
 
-	
-	<item component="ComponentInfo{com.apowersoft.backgrounderaser/com.backgrounderaser.main.page.splash.SplashActivity}" drawable="bg_remover" />
+	<!-- Bass Boost -->
+	<item component="ComponentInfo{audio.sound.effect.bass.virtrualizer.equalizer/net.coocent.eq.bassbooster.LauncherActivity}" drawable="bass_boost"/>
 
-	
-	<item component="ComponentInfo{net.csdn.csdnplus/net.csdn.csdnplus.activity.MainActivity}" drawable="csdn" />
+	<!-- Epson IPrint -->
+	<item component="ComponentInfo{epson.print/epson.print.WellcomeScreenActivity}" drawable="epson_iprint"/>
 
-	
-	<item component="ComponentInfo{com.adnonstop.mancamera2017/com.adnonstop.mancamera2017.CamHomme}" drawable="cam_homme" />
+	<!-- File Manager -->
+	<item component="ComponentInfo{com.android.fileexplorer/com.android.fileexplorer.MainActivity}" drawable="file_manager"/>
 
-	
-	<item component="ComponentInfo{com.jacey.camera.detector/com.jacey.camera.detector.SplashActivity}" drawable="camera_detector" />
+	<!-- Fotiaoqiang -->
+	<item component="ComponentInfo{com.fotiaoqiang.android.vpn/com.vpn.code.activity.LaunchActivity}" drawable="fotiaoqiang"/>
 
-	
-	<item component="ComponentInfo{cc.forestapp/cc.forestapp.applications.SplashActivity}" drawable="forest" />
+	<!-- Health -->
+	<item component="ComponentInfo{com.mi.health/com.mi.health.home.HomeActivity}" drawable="health"/>
 
-	
-	<item component="ComponentInfo{com.sankuai.meituan/com.meituan.android.pt.homepage.activity.MainActivity}" drawable="meituan" />
+	<!-- Kingdom Rush -->
+	<item component="ComponentInfo{com.yodo1.mergestkingdom.YODO1/com.yodo1.android.sdk.view.SplashActivity}" drawable="kingdom_rush"/>
 
-	
-	<item component="ComponentInfo{de.rwth_aachen.phyphox/de.rwth_aachen.phyphox.ExperimentList}" drawable="phyphox" />
+	<!-- Kotlin -->
+	<item component="ComponentInfo{kotlin.programming.coding.development.appdevelopment.mobile.learn/com.freeit.java.modules.onboarding.OnBoardingActivity}" drawable="kotlin"/>
 
-	
-	<item component="ComponentInfo{com.pixlr.express/com.pixlr.express.StartupActivity}" drawable="pixlr" />
+	<!-- Mail -->
+	<item component="ComponentInfo{com.android.email/com.wps.multiwindow.main.HomeActivity}" drawable="mail"/>
 
-	
-	<item component="ComponentInfo{org.coolcode.stopwatch/org.coolcode.stopwatch.Main}" drawable="stopwatch" />
+	<!-- Mi AI -->
+	<item component="ComponentInfo{com.miui.voiceassist/com.xiaomi.voiceassistant.MainActivity}" drawable="mi_ai"/>
 
-	
-	<item component="ComponentInfo{com.lemon.yoka/com.lemon.yoka.login.LoadingPageActivity}" drawable="uokayouka" />
+	<!-- Mi Video -->
+	<item component="ComponentInfo{com.miui.video/com.miui.video.Launcher1}" drawable="mi_video"/>
+
+	<!-- Spck Editor -->
+	<item component="ComponentInfo{io.spck/io.spck.EditorActivity}" drawable="spck_editor"/>
+
+	<!-- Themes -->
+	<item component="ComponentInfo{com.android.thememanager/com.android.thememanager.ThemeResourceTabActivity}" drawable="themes"/>
+
+	<!-- USB Lockit -->
+	<item component="ComponentInfo{com.usblockit.app/com.usblockit.app.MainActivity}" drawable="usb_lockit"/>
+
+	<!-- VIP影视解析 -->
+	<item component="ComponentInfo{com.i4c992d8a1beeee91/com.iapp.app.logoActivity}" drawable="vipyingshijiexi"/>
+
+	<!-- Visual Code Mobile -->
+	<item component="ComponentInfo{lk.visual.code.mobile/com.blacksquircle.ui.application.activities.MainActivity}" drawable="visual_code_mobile"/>
+
+	<!-- Wallet -->
+	<item component="ComponentInfo{com.mipay.wallet/com.xiaomi.jr.app.MiFinanceActivity}" drawable="wallet"/>
+
+	<!-- Wallpaper Engine -->
+	<item component="ComponentInfo{io.wallpaperengine.weclient/io.wallpaperengine.weclient.BrowseActivity}" drawable="wallpaper_engine"/>
+
+	<!-- WiFi万能钥匙 -->
+	<item component="ComponentInfo{com.snda.wifilocating/com.lantern.launcher.ui.MainActivity}" drawable="wifiwannengyaoshi"/>
+
+	<!-- Will Go -->
+	<item component="ComponentInfo{com.ruidonghy.will/com.ruidonghy.will.launcher.LauncherActivity}" drawable="will_go"/>
+
+	<!-- XBrowser -->
+	<item component="ComponentInfo{com.mmbox.xbrowser/com.mmbox.xbrowser.BrowserActivity}" drawable="xbrowser"/>
+
+	<!-- 中国移动 -->
+	<item component="ComponentInfo{com.greenpoint.android.mc10086.activity/com.mc10086.cmcc.base.SplashActivity}" drawable="zhongguoyidong"/>
+
+	<!-- 九九美剧 -->
+	<item component="ComponentInfo{com.meibai.yinzuan/com.meibai.yinzuan.ui.activity.SplashActivity}" drawable="jiujiumeiju"/>
+
+	<!-- 使命召唤手游 -->
+	<item component="ComponentInfo{com.tencent.tmgp.cod/com.codm.library.CODMPrivatePermissionActivity}" drawable="shimingzhaohuanshouyou"/>
+
+	<!-- 国家反诈中心 -->
+	<item component="ComponentInfo{com.hicorenational.antifraud/ui.activity.WelcomeActivity}" drawable="guojiafanzhazhongxin"/>
+
+	<!-- 小小影视 -->
+	<item component="ComponentInfo{com.abxsss.app/com.abxsss.app.MainActivity}" drawable="xiaoxiaoyingshi"/>
+
+	<!-- 小米社区 -->
+	<item component="ComponentInfo{com.xiaomi.vipaccount/com.xiaomi.mi.launch.LaunchActivity}" drawable="xiaomishequ"/>
+
+	<!-- 手机电视高清直播 -->
+	<item component="ComponentInfo{com.zbx.ct.tvzhibohd/com.tvmain.mvp.view.activity.SplanshActivity}" drawable="shoujidianshigaoqingzhibo"/>
+
+	<!-- 洋葱学园 原洋葱数学 -->
+	<item component="ComponentInfo{com.yangcong345.android.phone/com.yangcong345.android.phone.splash.v2.SplashActivity}" drawable="yangcongxueyuan_yuanyangcongshuxue"/>
+
+	<!-- 王国保卫战4 -->
+	<item component="ComponentInfo{com.kingdomrush4.Guanwang/org.cocos2dx.cpp.AppActivity}" drawable="wangguobaoweizhan4"/>
+
+	<!-- 笼中窥梦 -->
+	<item component="ComponentInfo{com.Optillusion.Moncage/com.unity3d.player.UnityPlayerActivity}" drawable="longzhongkuimeng"/>
+
+	<!-- 蜜蜂加速器 -->
+	<item component="ComponentInfo{com.honeybee.newapp/com.honeybee.newapp.ui.SplashActivity}" drawable="mifengjiasuqi"/>
+
+	<!-- 资源猫 -->
+	<item component="ComponentInfo{com.walixiwa.flash.player/androidx.walixiwa.ui.activity.WelcomeActivity}" drawable="ziyuanmao"/>
+
+	<!-- 辅警平台 -->
+	<item component="ComponentInfo{com.kc.fjpt/com.kc.fjpt.ui.activity.WelcomeAct}" drawable="fujingpingtai"/>
+
+	<!-- 辐射 避难所 -->
+	<item component="ComponentInfo{com.shandagames.falloutshelter/com.shandagames.falloutshelter.MainActivity}" drawable="fushe_binansuo"/>
+
+	<!-- 速读 排位 -->
+	<item component="ComponentInfo{com.number.muguang/com.iapp.app.logoActivity}" drawable="sudu_paiwei"/>
+
+	<!-- 金铲铲之战 -->
+	<item component="ComponentInfo{com.tencent.jkchess/com.tencent.gcloud.msdk.core.policy.ZGamePolicyActivity}" drawable="jinchanchanzhizhan"/>
+
+	<!-- 驾考宝典 -->
+	<item component="ComponentInfo{com.handsgo.jiakao.android/com.handsgo.jiakao.android.splash.Login}" drawable="jiakaobaodian"/>
 
 </resources>
