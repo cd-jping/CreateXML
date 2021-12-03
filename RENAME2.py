@@ -87,7 +87,7 @@ def re_xml(string):
             if bool(is_chinese(v)):
                 py = get_pinyin(v)
                 item.set("name", py)
-                count = + 1
+                count = count + 1
         print(str(count) + " changes from appmap ")
         app_map_tree.write(app_map, encoding="utf-8", xml_declaration=True)
 
