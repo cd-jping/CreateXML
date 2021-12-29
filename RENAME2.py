@@ -38,6 +38,8 @@ def read_files():
                 py = get_pinyin(f_name)
                 # 存入一个字典（同时保留原文件名）{"中文"： "zhongwen"}
                 chinese_list.update({f_name: py})
+            else:
+                english_list.update(f_name)
     print(str(len(chinese_list)) + " files")
 
 
@@ -122,18 +124,21 @@ def is_chinese(string):
 
 
 # 把文件名记录输出到txt 以供检查对照
-def output_txt(dict_temp):
+def output_txt(dict_ch, dict_eng):
     # print(chinese_list)
     file = open('./Changed.txt', 'w', encoding='utf-8')
     # 遍历字典的元素，将每项元素的key和value分拆组成字符串，注意添加分隔符和换行符
-    for k, v in dict_temp.items():
+    for k, v in dict_ch.items():
         file.write(str(k) + '   ' + str(v) + '\n')
+    for eng in dict_eng.items():
+        file.write(str(eng) + '\n')
     file.close()
     print("TXT File Exported")
 
 
 # 创建空字典用来存储文件名
 chinese_list = {}
+english_list = {}
 # 创建空字典用来获取xml的文件名
 xml_list = {}
 
@@ -143,7 +148,7 @@ if len(chinese_list) != 0:
     # 重命名xml
     re_xml(xml_list)
     # 输出 txt
-    output_txt(chinese_list)
+    output_txt(chinese_list, english_list)
 else:
     print("No File Changed")
 
