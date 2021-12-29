@@ -1,8 +1,7 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 import os
-import xml.etree.ElementTree as xmlTree
-import lxml.etree as ET
+import lxml.etree as et
 import pypinyin
 
 
@@ -64,7 +63,7 @@ def re_xml(string):
     if app_filter is None:
         pass
     else:
-        app_filter_tree = ET.parse(app_filter)
+        app_filter_tree = et.parse(app_filter)
         app_filter_root = app_filter_tree.getroot()
         count = 0
         # print(app_filter_root)
@@ -84,7 +83,7 @@ def re_xml(string):
     if app_map is None:
         pass
     else:
-        app_map_tree = ET.parse(app_map)
+        app_map_tree = et.parse(app_map)
         app_map_root = app_map_tree.getroot()
         count = 0
         for item in app_map_root.findall("item"):
@@ -100,7 +99,7 @@ def re_xml(string):
     if theme_res is None:
         pass
     else:
-        theme_res_tree = ET.parse(theme_res)
+        theme_res_tree = et.parse(theme_res)
         theme_res_root = theme_res_tree.getroot()
         count = 0
         for item in theme_res_root.findall("AppIcon"):
