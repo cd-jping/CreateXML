@@ -38,7 +38,7 @@ def read_files():
                 # 存入一个字典（同时保留原文件名）{"中文"： "zhongwen"}
                 chinese_list.update({f_name: py})
             else:
-                english_list.update(f_name)
+                english_list.append(f_name)
     print(str(len(chinese_list)) + " files")
 
 
@@ -129,7 +129,7 @@ def output_txt(dict_ch, dict_eng):
     # 遍历字典的元素，将每项元素的key和value分拆组成字符串，注意添加分隔符和换行符
     for k, v in dict_ch.items():
         file.write(str(k) + '   ' + str(v) + '\n')
-    for eng in dict_eng.items():
+    for eng in dict_eng:
         file.write(str(eng) + '\n')
     file.close()
     print("TXT File Exported")
@@ -137,7 +137,7 @@ def output_txt(dict_ch, dict_eng):
 
 # 创建空字典用来存储文件名
 chinese_list = {}
-english_list = {}
+english_list = []
 # 创建空字典用来获取xml的文件名
 xml_list = {}
 
